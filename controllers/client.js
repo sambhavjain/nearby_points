@@ -9,7 +9,6 @@ exports.postClients = function(req, res) {
   client.name = req.body.name;
   client.id = client.generateHash(req.body.id);
   client.secret = client.generateHash(req.body.secret);
-  // client.userId = req.user._id;
   client.redirectUrl = req.body.redirectUrl;
   // Save the client and check for errors
   client.save(function(err) {

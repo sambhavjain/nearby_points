@@ -11,8 +11,7 @@ module.exports = function (app) {
 
 	//endpoint handlers for /clients
 	app.post('/save_client',  clientController.postClients)
-  	// app.get('/clients',  clientController.getClients);
-
+  	
 	//endpoint handlers for oauth2 authorize
 	app.get('/oauth2/authorize', oauth2Controller.authorization)
  

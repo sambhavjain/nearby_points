@@ -6,8 +6,7 @@ var clientSchema = new mongoose.Schema({
   id: String,
   secret: String,
   redirectUrl : String,
-  // userId: String 
-});
+ });
 clientSchema.methods.validateClient = function (secret) {
   //return this.AdminPassword === password;
  // return password == this.password;
